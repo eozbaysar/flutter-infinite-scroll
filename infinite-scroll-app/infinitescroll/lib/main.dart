@@ -1,9 +1,7 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:infinitescroll/product_item_widget.dart';
 import 'package:infinitescroll/theme.dart';
-import 'package:rxdart/rxdart.dart';
+
 
 void main() => runApp(InfiniteScrollApp());
 
@@ -11,6 +9,7 @@ class InfiniteScrollApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Infinite Scroll App',
       theme: AppTheme.theme,
       home: InfiniteScrollPage(title: 'Infinite Scroll App'),
